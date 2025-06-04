@@ -75,44 +75,24 @@ const App = () => {
 const Topo = ({ imagem }) => (
   <View style={{ marginBottom: 20, padding: 1, borderRadius: 20, backgroundColor: '#a6b985' }}>
     <Image source={imagem} 
-    style={{ width: '100%', 
-    height: 400, 
-    borderRadius: 20 }} />
-    <Text style={{ color: '#006400', 
-      fontSize: 50, 
-      fontFamily: 'Baskerville Old Face', 
-      padding: 15 }}>
+    style={{ width: '100%', height: 400, borderRadius: 20 }} />
+    <Text 
+    style={{ color: '#006400', fontSize: 50, fontFamily: 'Baskerville Old Face', padding: 15 }}>
       Saladas
     </Text>
-    <Text style={{ fontSize: 20, 
-      color: '#4f2621', 
-      fontFamily: 'Ink Free', 
-      padding: 8, 
-      fontWeight: 'bold' }}>
+    <Text style={{ fontSize: 20, color: '#4f2621', fontFamily: 'Ink Free', padding: 8, fontWeight: 'bold' }}>
       Refrescantes, coloridas e cheias de sabor, as saladas são leves, crocantes e perfeitas para qualquer momento. Além de nutritivas, deixam a refeição mais equilibrada e deliciosa. Experimente com molhos naturais, queijos, castanhas e um toque de azeite!
     </Text>
   </View>
 );
 
 const Salada = ({ imagem, titulo, entrar, texto }) => (
-  <View style={{ marginBottom: 20, 
-  padding: 1, 
-  borderRadius: 20, 
-  backgroundColor: '#ebd592', 
-  alignItems: 'center' }}>
+  <View style={{ marginBottom: 20, padding: 1, borderRadius: 20, backgroundColor: '#ebd592', alignItems: 'center' }}>
     <Image source={imagem} 
     style={{ width: 150, height: 150, borderRadius: 75, marginTop: 10 }} />
-    <Text style={{ fontWeight: 'bold', 
-      fontSize: 40, 
-      fontFamily: 'Alice', 
-      padding: 15 }}>{titulo}</Text>
+    <Text style={{ fontWeight: 'bold', fontSize: 40, fontFamily: 'Alice', padding: 15 }}>{titulo}</Text>
     <TouchableOpacity onPress={entrar} 
-    style={{ backgroundColor: '#9f8241', 
-    paddingVertical: 12, 
-    paddingHorizontal: 25, 
-    borderRadius: 20, 
-    marginTop: 10, 
-    marginBottom: 20 }}>
+    style={{ backgroundColor: '#9f8241', paddingVertical: 12, paddingHorizontal: 25, borderRadius: 20, marginTop: 10, marginBottom: 20 }}>
       <Text style={{ fontSize: 30, color: 'white', fontFamily: 'Baskerville Old Face', textAlign: 'center' }}>Ingredientes 🥗</Text>
     </TouchableOpacity>
     <Text style={{ fontSize: 20, color: '#4f2621', textAlign: 'left', paddingHorizontal: 20, paddingBottom: 20, lineHeight: 26, fontFamily: 'Baskerville Old Face', fontWeight: 'bold', maxWidth: '100%' }}>
